@@ -35,7 +35,3 @@ document.addEventListener("mouseenter", e => {
         mcstuff.children[i].style.transition = "all 0.2s ease-out";
     };
 });
-
-function goHome() {
-    window.location.href = window.location.origin + window.location.pathname.replace("/index.html", "/");
-}
