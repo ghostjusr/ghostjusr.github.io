@@ -35,3 +35,35 @@ document.addEventListener("mouseenter", e => {
         mcstuff.children[i].style.transition = "all 0.2s ease-out";
     };
 });
+
+function goHome() {
+    window.location.href = window.location.origin + window.location.pathname.replace("/index.html", "/");
+}
+
+async function downloadStuff(filetype, filename) {
+    try {
+        let fileext = "";
+        if (filetype != "skript" && filetype != "datapack") {
+            console.error("Invalid file type for downloading.");
+        } else if (filetype == "skript") {
+            fileext = "sk";
+        } else if (filetype == "datapack") {
+            fileext = "zip";
+        };
+        const response = await fetch(`files/${filetype}s/${filename}.${fileext}`);
+        const text = await response.text();
+
+        const blob = new Blob([text], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'lifesteal.sk';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    } catch (error) {
+        console.error('Error fetching the file:', error);
+    };
+};
