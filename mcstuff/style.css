@@ -48,8 +48,8 @@ html, body, main {
     margin-bottom: 0px;
 }
 
-#subtitle {
-    font-size: 20px;
+.subtitle {
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -81,4 +81,90 @@ html, body, main {
     aspect-ratio: auto;
     filter: invert(1);
     -webkit-filter: invert(1);
+}
+
+#skripts {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+    height: max-content;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px black;
+    transform: translateZ(30px);
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.script {
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#datapacks {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+    height: max-content;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px black;
+    transform: translateZ(30px);
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.datapack {
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.downloadBtn {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-right: 0;
+    padding: 10px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.downloadImg {
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}
+
+.divider {
+    border-top: 2px solid white;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
 }
