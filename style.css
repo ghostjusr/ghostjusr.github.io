@@ -19,7 +19,8 @@ html, body, main {
     -webkit-user-select: none;
     -moz-user-select: none;
     transition: all 0.2s ease-out;
-    transform: perspective(5000px);
+    transform: perspective(2000px);
+    transform-style: preserve-3d;
 }
 
 #header {
@@ -33,10 +34,11 @@ html, body, main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     box-shadow: 0px 0px 10px black;
-    transform: translateZ(30px);
+    transform: translateZ(30px) perspective(2000px);
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
+    transform-style: preserve-3d;
 }
 
 #logo {
@@ -45,6 +47,7 @@ html, body, main {
     border-radius: 100%;
     margin-top: 5px;
     margin-bottom: 10px;
+    transform-style: preserve-3d;
 }
 
 #socials {
@@ -57,9 +60,10 @@ html, body, main {
     display: flex;
     flex-wrap: wrap;
     box-shadow: 0px 0px 10px black;
-    transform: translateZ(30px);
+    transform: translateZ(30px) perspective(2000px);
     justify-content: center;
     margin-top: 10px;
+    transform-style: preserve-3d;
 }
 
 .title {
@@ -69,12 +73,14 @@ html, body, main {
     padding: 0;
     margin: 0;
     margin-bottom: 0px;
+    transform-style: preserve-3d;
 }
 
 #subtitle {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    transform-style: preserve-3d;
 }
 
 .paragraph {
@@ -83,6 +89,7 @@ html, body, main {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    transform-style: preserve-3d;
 }
 
 .socialdiv {
@@ -97,11 +104,13 @@ html, body, main {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform-style: preserve-3d;
 }
 
 .socialimg {
     width: 90%;
     height: 90%;
+    transform-style: preserve-3d;
 }
 
 .sociallink {
@@ -110,6 +119,7 @@ html, body, main {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform-style: preserve-3d;
 }
 
 #mcstuff {
@@ -122,10 +132,11 @@ html, body, main {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 10px black;
-    transform: translateZ(30px);
+    transform: translateZ(30px) perspective(2000px);
     text-align: center;
     align-items: center;
     margin-top: 10px;
+    transform-style: preserve-3d;
 }
 
 #mcstufflink {
@@ -142,6 +153,7 @@ html, body, main {
 	padding: 14px 23px;
 	text-decoration: none;
     margin-top: 10px;
+    transform-style: preserve-3d;
 }
 
 #other {
@@ -153,10 +165,11 @@ html, body, main {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    transform: translateZ(30px);
+    transform: translateZ(30px) perspective(2000px);
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    transform-style: preserve-3d;
 }
 
 .otherlink {
@@ -176,19 +189,23 @@ html, body, main {
 	padding: 14px 23px;
 	text-decoration: none;
     margin-top: 10px;
+    transform-style: preserve-3d;
 }
 
 .otherimg {
     height: 2em;
     aspect-ratio: 1 / 1;
+    transform-style: preserve-3d;
 }
 
 .disabled {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     cursor: default;
+    transform-style: preserve-3d;
 }
 
 .disabled:active {
     cursor: not-allowed;
+    transform-style: preserve-3d;
 }
