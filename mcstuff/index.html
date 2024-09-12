@@ -10,15 +10,44 @@
         <main>
             <div id="mcstuff">
                 <div id="header">
-                    <div id="backarrowdiv" onclick="window.location.href = '/';">
+                    <div id="backarrowdiv" onclick="goHome();">
                         <img src="imgs/backarrow.png" id="backarrow">
                     </div>
                     <h1 class="title">Minecraft Stuff</h1>
-                    <p class="paragraph">A bunch of random things I made for Skript, 
+                    <p class="paragraph">
+                        A bunch of random things I made for Skript, 
                         a Minecraft plugin that allows you to code your own 
                         mini-plugins (they don't have to be mini) without needing a 
                         lot of knowledge of coding. There are also a few datapacks
-                        that I made.</p>
+                        that I made.
+                    </p>
+                </div>
+                <div id="skripts">
+                    <h1 class="title">Skripts</h1>
+                    <div class="script">
+                        <div class="divider"></div>
+                        <h1 class="subtitle">Moderation Tools</h1>
+                        <a onclick="downloadStuff('skript', 'modtools');" class="downloadBtn"><img src="imgs/downloadicon.png" class="downloadImg">&nbsp;&nbsp;Download</a>
+                        <p class="paragraph">
+                            A skript with many moderation tools such as detecting blacklisted words,
+                            tempbanning, warning, and muting/tempmuting. You can customize all sorts of things
+                            such as all the blacklisted words, the amount of warns for a ban, and default ban/mute messages.
+                        </p>
+                    </div>
+                </div>
+                <div id="datapacks">
+                    <h1 class="title">Datapacks</h1>
+                    <div class="datapack">
+                        <div class="divider"></div>
+                        <h1 class="subtitle">Lifesteal</h1>
+                        <a onclick="downloadStuff('datapack', 'lifesteal');" class="downloadBtn"><img src="imgs/downloadicon.png" class="downloadImg">&nbsp;&nbsp;Download</a>
+                        <p class="paragraph">
+                            A simple Lifesteal SMP datapack with
+                            custom heart items, revival beacons (Beacon of Life), and
+                            all the main features of the Lifesteal SMP. You can also
+                            customize 
+                        </p>
+                    </div>
                 </div>
             </div>
         </main>
