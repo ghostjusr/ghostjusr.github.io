@@ -37,7 +37,7 @@ document.addEventListener("mouseenter", e => {
 });
 
 function goHome() {
-    window.location.href = "ghostjusr.github.io";
+    window.location.href = "https://ghostjusr.github.io";
 }
 
 async function downloadStuff(filetype, filename) {
