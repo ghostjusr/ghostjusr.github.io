@@ -122,7 +122,7 @@ html, body, main {
     transform-style: preserve-3d;
 }
 
-#mcstuff {
+#stonkulator {
     border: 2px solid white;
     border-radius: 10px;
     width: 100%;
@@ -139,7 +139,7 @@ html, body, main {
     transform-style: preserve-3d;
 }
 
-#mcstufflink {
+#stonkulatorlink {
 	background-color: transparent;
     width: max-content;
 	border-radius: 10px;
